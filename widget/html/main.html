@@ -32,7 +32,7 @@ apiready = function() {
 ajpush.init(function(ret) {
     if (ret && ret.status){
     //success
-     ajpush.bindAliasAndTags({ alias: 'aName' }, function (ret) {
+     ajpush.bindAliasAndTags({ alias: 'aName',tags:['tag1','tag2'] }, function (ret) {
   var statusCode = ret.statusCode;
   if (statusCode !== 0) {
  //showMessage("错误", "推送别名绑定失败!");
