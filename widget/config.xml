@@ -4,7 +4,7 @@
   <name>jpush</name>  
   <description/>  
   <author email="qa1@apicloud.com" href="http://www.apicloud.com">技术支持-F</author>  
-  <content src="main.html"/>  
+  <content src="index.html"/>  
   <preference name="pageBounce" value="false"/>  
   <preference name="appBackground" value="rgba(0,0,0,0.0)"/>  
   <preference name="windowBackground" value="rgba(0,0,0,0.0)"/>  
