@@ -23,10 +23,37 @@
 </body>
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript">
+
+
+var ajpush;
 apiready = function() {
+ ajpush = api.require('ajpush');
+
+ajpush.init(function(ret) {
+    if (ret && ret.status){
+    //success
+     ajpush.bindAliasAndTags({ alias: 'aName' }, function (ret) {
+  var statusCode = ret.statusCode;
+  if (statusCode !== 0) {
+ //showMessage("错误", "推送别名绑定失败!");
+  }
+    });
+    }
+});
+
+//添加消息监听
+    api.addEventListener({
+     name: 'appintent'
+     }, function (ret, err) {
+    
+    });
+    
+}
 
 
-};
+
+
+
 </script>
 
 </html>
